@@ -1,0 +1,37 @@
+"""
+Estruturas condicionais
+if, (se) else, elif (else if)
+"""
+
+"""
+Estrutura condicional if em C
+
+if (idade < 18){
+    printf("menor de idade");
+}else if(idade ==18){
+}else;{
+    printf("maior de idade");
+}
+"""
+"""
+# Estrutura condicional if, else em Java
+
+if(idade < 18){
+    System.out.println("menor de idade");
+}else if(idade ==18)){
+    System.out.println("tem 18 anos");
+}else{
+    System.out.println("É menor de idade")
+}
+"""
+
+idade = 18
+
+if idade < 18:
+    print('menor de idade')
+elif idade == 18:
+    print('Tem 18 anos')
+elif idade == 26:
+    print('tem 26 anos')
+else:
+    print('maior de idade')
