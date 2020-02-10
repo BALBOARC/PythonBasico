@@ -1,0 +1,372 @@
+print('Digite o número da questão que quer executar:')
+questao = int(input())
+
+# 1 Leia um número inteiro e imprima
+if questao == 1:
+    print('Digite um número inteiro')
+    numero = int(input())
+    print(type(numero))
+
+# 2 Leia um número real e imprima
+elif questao == 2:
+    print("Digite um número real")
+    numero2 = input()
+    print(type(float(numero2)))
+
+# 3 Peça ao usuário para digitar três valores inteiros e imprima a soma deles.
+elif questao == 3:
+    print("Digite três números inteiros")
+    numero3 = int(input())
+    numero4 = int(input())
+    numero5 = int(input())
+    total = numero3 + numero4 + numero5
+    print(f'O resultado é {total}')
+
+# 4 Leia um número real e imprima o resultado do quadrado desse número.
+elif questao == 4:
+    print("Digite um número real")
+    numero = float(input())
+    print((numero ** 2))
+
+# 5 Leia um número real e imprima a quinta parte desse número.
+elif questao == 5:
+    print("Digite um número real")
+    numero = float(input())
+    print((numero / 5))
+
+# 6 Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit.
+elif questao == 6:
+    print("Digite a temperatura em Celsius:")
+    celsius = float(input())
+    f = float(celsius * (9.0 / 5.0) + 32.0)
+    print(f'O valor em Fahrenheit é: {f}')
+
+# 7 Leia uma temperatura em graus Fahrenheit e apresente-a convertida em graus Celsius.
+elif questao == 7:
+    print("Digite a temperatura em Fahrenheit:")
+    f = float(input())
+    celsius = float(5.0 * (f - 32.0) / 9.0)
+    print(f'O valor em Celsius é: {celsius}')
+
+# 8 Leia uma temperatura em graus Kelvin e apresente-a convertida em graus Celsius.
+elif questao == 8:
+    print("Digite a temperatura em Kelvin:")
+    k = float(input())
+    celsius = float(k - 273.15)
+    print(f'O valor em Celsius é: {celsius}')
+
+# 9 Leia uma temperatura em graus Celsius e apresente-a convertida em graus Kelvin.
+elif questao == 9:
+    print("Digite a temperatura em Celsius:")
+    celsius = float(input())
+    k = float(celsius + 273.15)
+    print(f'O valor em Kelvin é: {k}')
+
+# 10 Leia uma velocidade em km/h e apresente-a convertida em m/s
+elif questao == 10:
+    print("Digite a velocidade em km/h:")
+    vkm = float(input())
+    vms = float(vkm / 3.6)
+    print(f'O valor em m/s é: {vms}')
+
+# 11 Leia uma velocidade em m/s e apresente-a convertida em km/h.
+elif questao == 11:
+    print("Digite a velocidade em m/s:")
+    vms = float(input())
+    vkm = float(vms * 3.6)
+    print(f'O valor em km/h é: {vkm}')
+
+# 12 Leia uma distância em milhas e apresente-a convertida em km/h.
+elif questao == 12:
+    print("Digite a distância em milha:")
+    milha = float(input())
+    km = float(1.61 * milha)
+    print(f'O valor em km é: {km}')
+
+# 13 Leia uma distância em km e apresente-a convertida em millhas.
+elif questao == 13:
+    print("Digite a distância em km:")
+    km = float(input())
+    milha = float(km / 1.61)
+    print(f'O valor em milha é: {milha}')
+
+# 14 Leia um ângulo em graus e apresente-o convertido em radianos.
+elif questao == 14:
+    import math
+    print("Digite o valor do ângulo em graus:")
+    a = float(input())
+    rad = float(a * math.pi / 180)
+    print(f'O valor em radianos é: {rad}')
+
+# 15 Leia um ângulo em radianos e apresente-o convertido em graus.
+elif questao == 15:
+    import math
+    print("Digite o valor do ângulo em radianos:")
+    rad = float(input())
+    a = float(rad * 180 / math.pi)
+    print(f'O valor em graus é: {a}')
+
+# 16 Leia um valor de comprimento em polegadas e apresent-o em cm.
+elif questao == 16:
+    print("Digite o valor do comprimento em polegadas:")
+    p = float(input())
+    cm = float(p * 2.54)
+    print(f'O valor em cm é: {cm}')
+
+# 17 Leia um valor de comprimento em cm e apresent-o em polegadas.
+elif questao == 17:
+    print("Digite o valor do comprimento em cm:")
+    cm = float(input())
+    p = float(cm / 2.54)
+    print(f'O valor em cm é: {p}')
+
+# 18 Leia um valor de volume em metros cúbicos m³ e apresente-o em litros.
+elif questao == 18:
+    print("Digite o valor do volume em m³:")
+    v = float(input())
+    l = float(1000 * v)
+    print(f'O valor em litros é: {l}')
+
+# 19 Leia um valor de volume em litros e apresente-o em metros cúbicos m³.
+elif questao == 19:
+    print("Digite o valor do volume em litros:")
+    l = float(input())
+    v = float(l / 1000)
+    print(f'O valor em m³ é: {v}')
+
+# 20 Leia um valor de massa em kg e converta-o para libras.
+elif questao == 20:
+    print("Digite o valor de massa em kg:")
+    m = float(input())
+    l = float(m / 0.45)
+    print(f'O valor em libras é: {l}')
+
+# 21 Leia um valor de massa em libras e converta-o para kg.
+elif questao == 21:
+    print("Digite o valor de massa em libras:")
+    l = float(input())
+    m = float(l * 0.45)
+    print(f'O valor em kg é: {m}')
+
+# 22 Leia um valor de comprimento em jardas e apresente-o convertido em metros.
+elif questao == 22:
+    print("Digite o valor do comprimento em jardas:")
+    j = float(input())
+    m = float(0.91 * j)
+    print(f'O valor do comprimento em metros é : {m}')
+
+# 23 Leia um valor de comprimento em metros e apresente-o convertido em jardas.
+elif questao == 23:
+    print("Digite o valor do comprimento em metros:")
+    m = float(input())
+    j = float(m / 0.91)
+    print(f'O valor do comprimento em jardas é : {j}')
+
+# 24 Leia um valor de área em metros quadrados m² e apresente-o convertido em acres.
+elif questao == 24:
+    print("Digite o valor da área em m²:")
+    m = float(input())
+    acres = float(m * 0.000247)
+    print(f'O valor da área em acres é : {acres}')
+
+# 25 Leia um valor de área em acres e apresente-o convertido em metros quadrados m².
+elif questao == 25:
+    print("Digite o valor da área em acres:")
+    acres = float(input())
+    m = float(acres * 4048.58)
+    print(f'O valor da área em m² é : {m}')
+
+# 26 Leia um valor de área em metros quadrados m² e apresente-o convertido em hectares.
+elif questao == 26:
+    print("Digite o valor da área em m²:")
+    m = float(input())
+    h = float(m * 0.0001)
+    print(f'O valor da área em hectares é : {h}')
+
+# 27 Leia um valor de área em hectares e apresente-o convertido em metros quadrados m².
+elif questao == 27:
+    print("Digite o valor da área em hectares:")
+    h = float(input())
+    m = float(h * 1000)
+    print(f'O valor da área em m² é : {m}')
+
+# 28 Leia 3 valores e apresente como resultado a soma dos quadrados dos 3 valores lidos.
+elif questao == 28:
+    print("Digite valor 1")
+    v1 = float(input())
+    print("Digite valor 2")
+    v2 = float(input())
+    print("Digite valor 3")
+    v3 = float(input())
+    r = float(v1 ** 2 + v2 ** 2 + v3 ** 2)
+    print(f'O resultado é : {r}')
+
+# 29 Leia 4 notas, calcule a média aritmética e imprima o resultado.
+elif questao == 29:
+    print("Digite valor 1")
+    v1 = float(input())
+    print("Digite valor 2")
+    v2 = float(input())
+    print("Digite valor 3")
+    v3 = float(input())
+    print("Digite valor 4")
+    v4 = float(input())
+    r = float((v1 + v2 + v3 + v4) / 4)
+    print(f'O resultado é : {r}')
+
+# 30 Leia um valor em Real e a cotação do dólar, em seguida imprima o valor em dólares.
+elif questao == 30:
+    print("Digite valor em reais")
+    real = float(input())
+    print("Digite valor da cotação")
+    cotacao = float(input())
+    dolar = float(real / cotacao)
+    print(f'O resultado em Dólar: {dolar}')
+
+# 31 Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
+elif questao == 31:
+    print("Digite um número inteiro:")
+    num = int(input())
+    ant = int(num - 1)
+    suc = int(num + 1)
+    print(f'O antecessor é: {ant} e o sucessor é: {suc}')
+
+# 32 Leia um número inteiro e imprima a soma do sucessor de seu triplo com o antecessor do seu dobro.
+elif questao == 32:
+    print("Digite um número inteiro:")
+    num = int(input())
+    ant = int(num * 2 - 1)
+    suc = int(num * 3 + 1)
+    r = int(ant + suc)
+    print(f'O resultado é: {suc} + {ant} = {r}')
+
+# 33 Leia o tamanho do lado de um quadrado e imprima como resultado a sua área.
+elif questao == 33:
+    print("Digite o valor do lado do quadrado:")
+    num = float(input())
+    area = float(num ** 2)
+    print(f'O resultado é: {area}')
+
+# 34 Leia o valor do raio de um círculo e calcule e imprima a área do círculo correspondente.
+elif questao == 34:
+    import math
+    print("Digite o valor do raio do círculo:")
+    num = float(input())
+    area = float(math.pi * (num ** 2))
+    print(f'O resultado é: {area}')
+
+# 35 Leia a e b e calcule a hipotenusa.
+elif questao == 35:
+    import math
+    print("Digite o valor de a:")
+    a = float(input())
+    print("Digite o valor de b:")
+    b = float(input())
+    hipotenusa = float(math.sqrt(a ** 2 + b ** 2))
+    print(f'O resultado é: {hipotenusa}')
+
+# 36 Leia a altura e o raio de um cilindro circular e imprima o volume do cilindro.
+elif questao == 36:
+    import math
+    print("Digite o valor da altura:")
+    a = float(input())
+    print("Digite o valor do raio:")
+    r = float(input())
+    v = float(math.pi * r ** 2 * a)
+    print(f'O volume é: {v}')
+
+# 37 Leia o valor de um produto e imprima o valor com desconto de 12%.
+elif questao == 37:
+    print("Digite o valor do produto:")
+    p = float(input())
+    v = float(p - p * 0.12)
+    print(f'O valor com 12% de desconto é: {v}')
+
+# 38 Leia o salário de um funcionário e aumente 25%.
+elif questao == 38:
+    print("Digite o valor do salário:")
+    s = float(input())
+    v = float(s * 1.25)
+    print(f'O valor com 25% de acréscimo é: {v}')
+
+# 39 Quantia de R$ 780.000 pra ganhadores de concurso.
+elif questao == 39:
+    from decimal import Decimal
+    print("Valor total do prêmio: R$ 780.000")
+    premio = 780_000
+    primeiro = Decimal(premio * 0.46)
+    segundo = Decimal(premio * 0.32)
+    terceiro = Decimal(premio - (primeiro + segundo))
+    print(f'O valor do primeiro: {primeiro} segundo: {segundo} e terceiro: {terceiro}')
+
+# 40 Encanador a R$ 30,00 o dia número de dias trabalhados e desconto de 8% IR.
+elif questao == 40:
+    print("Digite a quantidade de dias trabalhados:")
+    dias = int(input())
+    r = round(dias * 30 - (dias * 30 * 0.08), 2)
+    print(f'A Quantia líquida com 8% de Desconto é: {r}')
+
+# 41 Leia o valor da hora de trabalho e número de horas trabalhadas no mês adicione 10%.
+elif questao == 41:
+    print("Digite o valor da hora:")
+    hora = float(input())
+    print("Digite o número de horas trabalhadas no mês")
+    mes = float(input())
+    r = round(hora * mes * 1.10, 2)
+    print(f'O valor total é: R$ {r}')
+
+# 42 Leia salario base, gratificação de 5% e imposto de 7% sobre o sário base.
+elif questao == 42:
+    print("Digite o salário base:")
+    salario = float(input())
+    r = round(salario + (salario * 0.05) - (salario * 0.07), 2)
+    print(f'O valor total é: R$ {r}')
+
+# 43 Programa de ajuda para vendedores.
+elif questao == 43:
+    print("Digite o valor:")
+    valor = float(input())
+    total10 = round(valor - (valor * 0.10), 2)
+    valorparcela = round(valor / 3, 2)
+    comissaovista = round(total10 * 0.05, 2)
+    comissaoparcelada = round(valor * 0.05, 2)
+    print(f'O valor total com desconto é: R$ {total10}')
+    print(f'O valor da parcela em 3x é: R$ {valorparcela}')
+    print(f'O valor da comissão a vista é: R$ {comissaovista}')
+    print(f'O valor da comissão parcelada é: R$ {comissaoparcelada}')
+
+# 44 Leia altura do degrau da escada e altura escolhida, calcular quantidade de degraus.
+elif questao == 44:
+    print("Digite o valor da altura total:")
+    altura = float(input())
+    print("Digite a altura do degrau:")
+    degral = float(input())
+    quant = round(altura / degral, 3)
+    print(f'A quantidade de degraus necessária é: {quant}')
+
+# 45 Converter uma letra maiúscula em minúscula.
+elif questao == 45:
+    print("Digite uma letra qualquer:")
+    l = str(input())
+    print(f"A forma maíscula dessa letra é: {l.upper()}")
+
+# 46 Leia um número inteiro positivo de 3 dígitos (100 a 999), inverta.
+elif questao == 46:
+    print("Digite um número de 3 dígitos:")
+    num = str(input())
+    r = int(num[::-1])
+    print(f"A forma invertida desse número é: {r}")
+    print(type(r))
+
+# 47 Leia um número inteiro positivo de 4 dígitos (1000 a 9999), imprima 1 digito por linha.
+elif questao == 47:
+    print("Digite um número inteiro de 4 dígitos:")
+    num = str(input())
+    print(f"A primeira é: {num[ 0 : 1 ]}")
+    print(f"A segunda é: {num[ 1 : 2 ]}")
+    print(f"A terceira é: {num[ 2 : 3 ]}")
+    print(f"A quarta é: {num[ 3 : 4 ]}")
+    print(type(num))
+    
+else:
+    print('Digite uma questão válida!')
